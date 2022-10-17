@@ -1,0 +1,59 @@
+  <!DOCTYPE html>
+  <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS A QUIZ!</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylsheet" href="assets/css/style.css">
+</head>
+<div class="top-bar">
+    <div id="top-bar-info">
+        <button class="hs-button">View Highscores</button>
+        <p id="timer">Timer: 00:00</p>
+    </div>
+</div>
+
+    <!-- Start quiz -->
+    <div id="startScreen" class="startScreen">
+        <h1> Coding Quiz </h2>
+
+        <p>
+            Try to answer the following code related questions within the givin time limit. 
+            Keep in mind that incorrect answers will penalize your score by TEN seconds. BEST OF LUCK!!!
+        </p>
+     
+        <button id="beginQuizBtn" class="beginQuizBnt">START QUIZ</button>
+    </div>
+
+    <!-- Questions-->
+    <div id="questionScreen" class="questionScreen">
+        
+        <h2 id="question" class="question"></h2>
+        <ol id="answers" class="answers"></ol>
+       
+
+    </div>
+
+    <!-- Results-->
+    <div id="results" class="results">
+        <h3>How did you Do?</h3>
+        <h4 id="score"></h4>
+        <h5>Enter Initials</h5>
+        <input type="text" id="yourInitials"/>
+        <button id="submit">Submit</button>
+    </div>
+   
+    <p id="completeScores"></p>
+   
+ <script src="./assets/JS/script.js"></script>
+
+
+
+
+</body>
+
+
+
+
+  </html>

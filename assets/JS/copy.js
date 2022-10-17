@@ -1,3 +1,34 @@
+//questions
+// Commonly used data types DO Not Include:
+//  1.strings
+//  2.booleans
+//  3.alerts
+//  4.numbers
+
+// A very useful tool used during development and debugging for printing content to the debuuger is:
+//  1.JavaScript
+//  2.terminal/bash
+//  3.for loops
+//  4.console.log
+
+// String values must be enclosed within _________ when being assigned to variables.
+//  1.commas
+//  2.curly brackets
+//  3.quotes    ****
+//  4.parenthesis
+
+// The condition in an if / else statement is enclosed with _________.
+//  1.quotes
+//  2.curly brackets
+//  3.parenthesis ****
+//  4.square brackets
+
+// Arrays in JavaScript can be used to store _________.
+//  1.numbers and strings
+//  2.other strings
+//  3.booleans
+//  4.all the above ****
+
 var questions = [
     {
         title: "Commonly used data types DO Not Include:",
@@ -35,36 +66,36 @@ var timerDisplay = document.getElementById("timer");
 var beginQuizBtn = document.getElementById("beginQuizBtn")
 var questionScreen = document.getElementById("questionScreen");
 questionScreen.style.display = "none";
-var initialsEL = document.getElementById("yourInitials")
-var scoreStorage = document.querySelector(".hs-button");
-var completeScores = document.getElementById("completeScores");
+
 
 var questionAsked = 0;
 var time= 60;
 var quizTimer;
 
+let currentWindow = startScreen
+let prevWindow = startScreen
+
+
 function startQuiz(){
     startScreen.style.display = "none";
-    results.style.display= "none";
     questionScreen.style.display ="block";
     startQuizTimer();
     timerDisplay.textContent = time;
     startQuestions();
  }
 
- beginQuizBtn.onclick = startQuiz;
 
  function startQuizTimer(){
     quizTimer = setInterval(function(){
         time--;
         timerDisplay.textContent= time;
-      if(time <= 0){
+      if(time < 0){
         time = 0;
-        timerDisplay.textContent= time
         endQuiz();
       }               
     }, 1000)
- } 
+ }
+
  function startQuestions() {
     var currentQuestion = questions[questionAsked].title;
     questionsTitle.textContent = currentQuestion;
@@ -96,41 +127,8 @@ function startQuiz(){
     console.log(questionAsked)
     if (questionAsked === questions.length){
         endQuiz();
-    } else{
-        startQuestions();
-        }
+    }
+    startQuestions();
     }
 
-    let quizScore = time
-
-    function endQuiz(){
-        startScreen.style.display = "none";
-        questionScreen.style.display ="none";
-        results.style.display= "block";
-
-        clearInterval(quizTimer) 
-        
-        var score = timerDisplay.textContent 
-        
-
-    }
-
-    function submitScore (){
-        var initials = initialsEL.value
-        var score = timerDisplay.textContent 
-        var finaleScore = initials + score
-
-        console.log(initials, score)
-
-        localStorage.setItem("HighScore", finaleScore)
-        
-
-    }
-
-    const showScore =  function()  {
-        var scoresSheet = localStorage.getItem("HighScore")
-        completeScores.textContent = scoresSheet;
-    }
-
-    submit.addEventListener('click', submitScore)
-    scoreStorage.addEventListener('click', showScore)
+    beginQuizBtn.onclick = startQuiz;
