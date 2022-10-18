@@ -11,10 +11,15 @@ AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 
+### Link
+
+
 ### Images
 <img src="assets/images/codeQuizStart.png" width=60%>
+<img src="assets/images/questions.png" width=60%>
+<img src="assets/images/scores.png" width=60%>
 
-### Link
+
 
 ## License
 
