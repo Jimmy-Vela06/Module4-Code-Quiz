@@ -3,7 +3,11 @@
 ## Description
 
 This is a code quiz to help test your knowledge. The faster you complete the
-5 questions the higher your score. Per incorrect answer you will 10 seconds on the time. Take the test and track your score with your initials.
+5 questions the higher your score. Per incorrect answer you will lose 10 seconds on the time. 
+You can start the quiz by hitting the start button. Once the quiz has started a 60 second will begin. If 
+the countdown hits 0 the quiz is over. Take the test and track your score with your initials. You may 
+view scores by hitting the "View Scores" button at the end once you enter your initials. Previous scores
+and initials will be displayed.
 
 ## User Story
 
