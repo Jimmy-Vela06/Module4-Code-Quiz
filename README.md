@@ -1,6 +1,6 @@
 # Module4-CodeQuiz
 
-## Description
+## Description:
 
 This is a code quiz to help test your knowledge. The faster you complete the
 5 questions the higher your score. Per incorrect answer you will lose 10 seconds on the time. 
@@ -9,23 +9,24 @@ the countdown hits 0 the quiz is over. Take the test and track your score with y
 view scores by hitting the "View Scores" button at the end once you enter your initials. Previous scores
 and initials will be displayed.
 
-## User Story
+## User Story:
 
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 
-### Link
+### Link:
+https://jimmy-vela06.github.io/Module4-Code-Quiz/
 
 
-### Images
+### Images:
 <img src="assets/images/codeQuizStart.png" width=60%>
 <img src="assets/images/questions.png" width=60%>
 <img src="assets/images/scores.png" width=60%>
 
 
 
-## License
+## License:
 
 MIT License
 
