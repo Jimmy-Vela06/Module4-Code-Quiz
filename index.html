@@ -1,59 +1,59 @@
-  <!DOCTYPE html>
-  <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITS A QUIZ!</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylsheet" href="assets/css/style.css">
-</head>
-<div class="top-bar">
-    <div id="top-bar-info">
-        <button class="hs-button">View Highscores</button>
-        <p id="timer">Timer: 00:00</p>
-    </div>
-</div>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="quizContainer">
+      <div id="top-bar-info" class="top-bar">
+        <span>
+          <button class="hs-button">View Scorers</button>
+        </span>
+        <p>Timer: <span id="timer">60</span> Seconds</p>
+      </div>
 
-    <!-- Start quiz -->
-    <div id="startScreen" class="startScreen">
-        <h1> Coding Quiz </h2>
+      <!-- Start quiz -->
+      <div id="startScreen" class="startScreen">
+        <div class="title">
+          <h1>Coding Quiz</h1>
+        </div>
 
         <p>
-            Try to answer the following code related questions within the givin time limit. 
-            Keep in mind that incorrect answers will penalize your score by TEN seconds. BEST OF LUCK!!!
+          Try to answer the following code related questions within the givin
+          time limit. Keep in mind that incorrect answers will penalize your
+          score by TEN seconds. BEST OF LUCK!!!
         </p>
-     
-        <button id="beginQuizBtn" class="beginQuizBnt">START QUIZ</button>
-    </div>
 
-    <!-- Questions-->
-    <div id="questionScreen" class="questionScreen">
-        
+        <button id="beginQuizBtn">
+          START QUIZ
+        </button>
+      </div>
+
+      <!-- Questions-->
+      <div id="questionScreen" class="questionScreen">
         <h2 id="question" class="question"></h2>
-        <ol id="answers" class="answers"></ol>
-       
 
-    </div>
+        <span>
+          <ol id="answers" class="answers"></ol>
+        </span>
+      </div>
 
-    <!-- Results-->
-    <div id="results" class="results">
+      <!-- Results-->
+      <div id="results" class="results">
         <h3>How did you Do?</h3>
         <h4 id="score"></h4>
         <h5>Enter Initials</h5>
-        <input type="text" id="yourInitials"/>
-        <button id="submit">Submit</button>
+        <input type="text" id="yourInitials" />
+        <button id="submit" class="submitBtn">Submit</button>
+        <div class="completeScores" id="completeScores"></div>
+
+        <!-- <button id="startScreenBtn">Start Screen</button> -->
+      </div>
     </div>
-   
-    <p id="completeScores"></p>
-   
- <script src="./assets/JS/script.js"></script>
-
-
-
-
-</body>
-
-
-
-
-  </html>
+  </body>
+  <script src="./assets/JS/script.js"></script>
+</html>
