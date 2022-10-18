@@ -12,7 +12,7 @@ I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 
 ### Images
-<img src="assets/images/codeQuizStart.png" width=90>
+<img src="assets/images/codeQuizStart.png" width=90%>
 
 ### Link
 
